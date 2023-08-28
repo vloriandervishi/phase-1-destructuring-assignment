@@ -1,30 +1,47 @@
-const farmAnimals = 'cow horse sheep pig chicken';
-
-const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-
+const farmAnimals = "cow horse sheep pig chicken";
+const [moo, neigh, baa, oink, cluck] = farmAnimals.split(" ");
+console.log(moo, neigh, baa, oink, cluck);
+const [bessie, , dolly, babe, little] = farmAnimals.split(" ");
+const colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+const [blackAndWhite, , black, pink, ,] = farmAnimals.split(" ");
+const [red, orange, yellow, green, blue, indigo, violet] = colors;
+const [r, o, y, g, b, i, v] = colors;
+const [, , , , , indg] = colors;
+console.log(indg);
 const muppet = {
-  muppetName: 'Miss Piggy',
-  color: 'pink',
-  song: 'Never Before, Never Again',
-  job: 'Cast member of The Muppet Show',
-  partner: 'Kermit'
+  muppetName: "Miss Piggy",
+  color: "pink",
+  song: "Never Before, Never Again",
+  job: "Cast member of The Muppet Show",
+  partner: "Kermit",
 };
+const muppetName = muppet.muppetName;
+const color = muppet.color;
 
 const nestedMuppet = {
-  nestedName: 'Kermit',
-  nestedColor: 'green',
+  nestedName: "Kermit",
+  nestedColor: "green",
   album: {
     theMuppetMovie: {
-      song1: 'Rainbow Connection',
-      song2: 'Moving Right Along',
-      song3: 'Never Before, Never Again',
-      song4: 'I Hope That Something Better Comes Along',
+      song1: "Rainbow Connection",
+      song2: "Moving Right Along",
+      song3: "Never Before, Never Again",
+      song4: "I Hope That Something Better Comes Along",
     },
   },
-  nestedJob: 'Host of The Muppet Show',
-  nestedPartner: 'Miss Piggy'
+  nestedJob: "Host of The Muppet Show",
+  nestedPartner: "Miss Piggy",
 };
+const name = nestedMuppet.nestedName;
+const col = muppet.color;
+const song = nestedMuppet.album.theMuppetMovie.song3;
+const job = muppet.job;
+const partner = muppet.partner;
 
+const song2 = nestedMuppet.album.theMuppetMovie.song2;
+const song4 = nestedMuppet.album.theMuppetMovie.song4;
+const nestedJob = nestedMuppet.nestedJob;
+const nestedPartner = nestedMuppet.nestedPartner;
 // Strings
 
 // 1. Use destructuring to assign appropriate variables based on the sounds animals make.
@@ -39,7 +56,7 @@ const nestedMuppet = {
 
 // 5. Some people have a really hard time picking out indigo, so let's leave that one out, using the first letter of each color as the variable names.
 
-// 6. But wait! Indigo is now feeling *super* left out. Let's only assign indigo using indg. 
+// 6. But wait! Indigo is now feeling *super* left out. Let's only assign indigo using indg.
 
 // Objects
 
